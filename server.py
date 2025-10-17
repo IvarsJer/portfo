@@ -51,5 +51,36 @@ def submit_form():
             return "Did not save to database"
     return "Something went wrong. Try again!"
 
+PROJECTS = {
+    "datacom": {
+        "title": "DATACOM — Web Portal & Android App",
+        "hero": "assets/images/work001-01.jpg",
+        "images": ["assets/images/work001-02.jpg", "assets/images/work001-03.jpg", "assets/images/work001-04.jpg"],
+        "summary": "Backend with Python/FastAPI, web portal, Android app, and automations.",
+        "role": "Python & Android Developer",
+    },
+    "printify": {
+        "title": "Printify — Automations & API",
+        "hero": "assets/images/work001-01.jpg",
+        "images": ["assets/images/work001-02.jpg", "assets/images/work001-03.jpg", "assets/images/work001-04.jpg"],
+        "summary": "Shipping & tracking setup, REST integrations (Postman), logic & data analysis.",
+        "role": "Automations Engineer",
+    },
+    "dynatech": {
+        "title": "Dynatech — Web Components & SEO",
+        "hero": "assets/images/work001-01.jpg",
+        "images": ["assets/images/work001-02.jpg", "assets/images/work001-03.jpg", "assets/images/work001-04.jpg"],
+        "summary": "Reusable components, gamification module, analytics & SEO improvements.",
+        "role": "Web Developer",
+    },
+}
+
+@app.route("/work/<slug>")
+def work(slug):
+    p = PROJECTS.get(slug)
+    if not p:
+        abort(404)
+    return render_template("work.html", p=p)
+
 if __name__ == "__main__":
     app.run(debug=True)

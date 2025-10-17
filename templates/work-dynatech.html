@@ -4,16 +4,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="{{ p.title }}" />
+  <meta name="description" content="Dynatech — Web components, gamification & SEO by Ivars Jermanis" />
   <meta name="google" content="notranslate" />
   <meta name="author" content="Ivars Jermanis" />
   <meta name="msapplication-tap-highlight" content="no" />
+
   <link rel="apple-touch-icon" sizes="180x180"
         href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
   <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
-  <title>{{ p.title }}</title>
+  <title>Dynatech — Project</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='main.3f6952e4.css') }}">
 </head>
+
 <body>
   <div id="site-border-left"></div><div id="site-border-right"></div>
   <div id="site-border-top"></div><div id="site-border-bottom"></div>
@@ -43,36 +45,51 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <img src="{{ url_for('static', filename=p.hero) }}" class="img-responsive" alt="{{ p.title }}">
+          <img src="{{ url_for('static', filename='assets/images/work001-01.jpg') }}"
+               class="img-responsive" alt="Dynatech components hero">
           <div class="card-container">
-            <div class="text-center"><h1 class="h2">{{ p.title }}</h1></div>
-            <p>{{ p.summary }}</p>
-            <blockquote><p>“Key outcome highlight.”</p><small class="pull-right">Role: {{ p.role }}</small></blockquote>
+            <div class="text-center">
+              <h1 class="h2">Dynatech — Web Components & SEO</h1>
+            </div>
+            <p>
+              Built reusable UI components and a gamification module, supported analytics,
+              and improved technical <strong>SEO</strong> to boost discoverability. Focused on
+              clean, maintainable front-end with <strong>JS/React</strong>, HTML, and CSS.
+            </p>
+            <blockquote>
+              <p>“Reusability and SEO fixes lifted performance and simplified future work.”</p>
+              <small class="pull-right">Role: Web Developer</small>
+            </blockquote>
           </div>
         </div>
 
         <div class="col-md-8 col-md-offset-2 section-container-spacer">
           <div class="row">
             <div class="col-xs-12 col-md-6">
-              <img src="{{ url_for('static', filename=p.images[0]) }}" class="img-responsive" alt="Feature A" loading="lazy">
-              <p>Feature / detail A</p>
+              <img src="{{ url_for('static', filename='assets/images/work001-02.jpg') }}"
+                   class="img-responsive" alt="Reusable components" loading="lazy">
+              <p>Reusable, accessible components shared across the site.</p>
             </div>
             <div class="col-xs-12 col-md-6">
-              <img src="{{ url_for('static', filename=p.images[1]) }}" class="img-responsive" alt="Feature B" loading="lazy">
-              <p>Feature / detail B</p>
+              <img src="{{ url_for('static', filename='assets/images/work001-03.jpg') }}"
+                   class="img-responsive" alt="Gamification module" loading="lazy">
+              <p>Gamification component to increase user engagement.</p>
             </div>
           </div>
         </div>
 
         <div class="col-xs-12">
-          <img src="{{ url_for('static', filename=p.images[2]) }}" class="img-responsive" alt="Full view" loading="lazy">
+          <img src="{{ url_for('static', filename='assets/images/work001-04.jpg') }}"
+               class="img-responsive" alt="SEO improvements" loading="lazy">
         </div>
       </div>
     </div>
   </div>
 
   <footer class="footer-container text-center">
-    <div class="container"><p>© {{ 2025 }} Ivars Jermanis</p></div>
+    <div class="container">
+      <p>© {{ 2025 }} Ivars Jermanis</p>
+    </div>
   </footer>
 
   <script defer src="{{ url_for('static', filename='main.70a66962.js') }}"></script>

@@ -4,16 +4,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="{{ p.title }}" />
+  <meta name="description" content="Printify — Automations & API integrations by Ivars Jermanis" />
   <meta name="google" content="notranslate" />
   <meta name="author" content="Ivars Jermanis" />
   <meta name="msapplication-tap-highlight" content="no" />
+
   <link rel="apple-touch-icon" sizes="180x180"
         href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
   <link rel="icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
-  <title>{{ p.title }}</title>
+  <title>Printify — Project</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='main.3f6952e4.css') }}">
 </head>
+
 <body>
   <div id="site-border-left"></div><div id="site-border-right"></div>
   <div id="site-border-top"></div><div id="site-border-bottom"></div>
@@ -43,36 +45,51 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <img src="{{ url_for('static', filename=p.hero) }}" class="img-responsive" alt="{{ p.title }}">
+          <img src="{{ url_for('static', filename='assets/images/work001-01.jpg') }}"
+               class="img-responsive" alt="Printify automations hero">
           <div class="card-container">
-            <div class="text-center"><h1 class="h2">{{ p.title }}</h1></div>
-            <p>{{ p.summary }}</p>
-            <blockquote><p>“Key outcome highlight.”</p><small class="pull-right">Role: {{ p.role }}</small></blockquote>
+            <div class="text-center">
+              <h1 class="h2">Printify — Automations & API</h1>
+            </div>
+            <p>
+              Built shipping & tracking setup, <strong>REST API</strong> integrations using Postman,
+              refined business logic, and performed data analysis. Automated internal flows with
+              <strong>Python</strong> to increase reliability and reduce manual work.
+            </p>
+            <blockquote>
+              <p>“Automation and API hygiene significantly reduced edge-case failures.”</p>
+              <small class="pull-right">Role: Automations Engineer</small>
+            </blockquote>
           </div>
         </div>
 
         <div class="col-md-8 col-md-offset-2 section-container-spacer">
           <div class="row">
             <div class="col-xs-12 col-md-6">
-              <img src="{{ url_for('static', filename=p.images[0]) }}" class="img-responsive" alt="Feature A" loading="lazy">
-              <p>Feature / detail A</p>
+              <img src="{{ url_for('static', filename='assets/images/work001-02.jpg') }}"
+                   class="img-responsive" alt="API integration flows" loading="lazy">
+              <p>Postman collections & REST endpoints for order/shipping flows.</p>
             </div>
             <div class="col-xs-12 col-md-6">
-              <img src="{{ url_for('static', filename=p.images[1]) }}" class="img-responsive" alt="Feature B" loading="lazy">
-              <p>Feature / detail B</p>
+              <img src="{{ url_for('static', filename='assets/images/work001-03.jpg') }}"
+                   class="img-responsive" alt="Data analysis dashboards" loading="lazy">
+              <p>Data analysis to tune rules and improve success rates.</p>
             </div>
           </div>
         </div>
 
         <div class="col-xs-12">
-          <img src="{{ url_for('static', filename=p.images[2]) }}" class="img-responsive" alt="Full view" loading="lazy">
+          <img src="{{ url_for('static', filename='assets/images/work001-04.jpg') }}"
+               class="img-responsive" alt="System overview" loading="lazy">
         </div>
       </div>
     </div>
   </div>
 
   <footer class="footer-container text-center">
-    <div class="container"><p>© {{ 2025 }} Ivars Jermanis</p></div>
+    <div class="container">
+      <p>© {{ 2025 }} Ivars Jermanis</p>
+    </div>
   </footer>
 
   <script defer src="{{ url_for('static', filename='main.70a66962.js') }}"></script>

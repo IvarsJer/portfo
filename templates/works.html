@@ -65,10 +65,9 @@
               <!-- Slide 1 (active) -->
               <div class="item active">
                 <div class="row">
-
                   <!-- DATACOM -->
                   <div class="col-sm-4">
-                    <a href="{{ url_for('html_page', page_name='work-datacom.html') }}"
+                    <a href="{{ url_for('work', slug='datacom') }}"
                        class="black-image-project-hover" title="DATACOM — Web Portal & Android App">
                       <img src="{{ url_for('static', filename='assets/images/work01-hover.jpg') }}"
                            alt="DATACOM management portal preview" class="img-responsive" loading="lazy">
@@ -80,14 +79,14 @@
                         Backend services with <strong>Python</strong>/<strong>FastAPI</strong>, web management portal,
                         Android app design/dev, and automation flows.
                       </p>
-                      <a href="{{ url_for('html_page', page_name='work-datacom.html') }}"
+                      <a href="{{ url_for('work', slug='datacom') }}"
                          class="btn btn-default">Discover</a>
                     </div>
                   </div>
 
                   <!-- PRINTIFY -->
                   <div class="col-sm-4">
-                    <a href="{{ url_for('html_page', page_name='work-printify.html') }}"
+                    <a href="{{ url_for('work', slug='printify') }}"
                        class="black-image-project-hover" title="Printify — Automations & API">
                       <img src="{{ url_for('static', filename='assets/images/work02-hover.jpg') }}"
                            alt="Printify shipping & API integrations" class="img-responsive" loading="lazy">
@@ -99,14 +98,14 @@
                         Shipping & tracking setup, <strong>REST API</strong> integrations (Postman),
                         logic adjustments, and data analysis with <strong>Python</strong>.
                       </p>
-                      <a href="{{ url_for('html_page', page_name='work-printify.html') }}"
+                      <a href="{{ url_for('work', slug='printify') }}"
                          class="btn btn-default">Discover</a>
                     </div>
                   </div>
 
                   <!-- DYNATECH -->
                   <div class="col-sm-4">
-                    <a href="{{ url_for('html_page', page_name='work-dynatech.html') }}"
+                    <a href="{{ url_for('work', slug='dynatech') }}"
                        class="black-image-project-hover" title="Dynatech — Web Components & SEO">
                       <img src="{{ url_for('static', filename='assets/images/work03-hover.jpg') }}"
                            alt="Dynatech reusable components and SEO improvements" class="img-responsive" loading="lazy">
@@ -118,11 +117,111 @@
                         Reusable UI components, a gamification module, site analytics support,
                         and measurable SEO improvements.
                       </p>
-                      <a href="{{ url_for('html_page', page_name='work-dynatech.html') }}"
+                      <a href="{{ url_for('work', slug='dynatech') }}"
+                         class="btn btn-default">Discover</a>
+                    </div>
+                  </div>
+                </div><!-- /row -->
+              </div><!-- /item -->
+
+              <!-- Slide 2 -->
+              <div class="item">
+                <div class="row">
+                  <!-- Reuse cards (or swap screenshots/text later) -->
+                  <div class="col-sm-4">
+                    <a href="{{ url_for('work', slug='datacom') }}"
+                       class="black-image-project-hover" title="DATACOM — Automation processes">
+                      <img src="{{ url_for('static', filename='assets/images/work01-hover.jpg') }}"
+                           alt="DATACOM automation preview" class="img-responsive" loading="lazy">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>001/003</h4>
+                      <h3>DATACOM — Automations</h3>
+                      <p>Automation flows and integrations to improve operational efficiency.</p>
+                      <a href="{{ url_for('work', slug='datacom') }}"
                          class="btn btn-default">Discover</a>
                     </div>
                   </div>
 
+                  <div class="col-sm-4">
+                    <a href="{{ url_for('work', slug='printify') }}"
+                       class="black-image-project-hover" title="Printify — Data analysis">
+                      <img src="{{ url_for('static', filename='assets/images/work02-hover.jpg') }}"
+                           alt="Printify data analysis" class="img-responsive" loading="lazy">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>002/003</h4>
+                      <h3>Printify — Data Analysis</h3>
+                      <p>Analyzed shipping data and adjusted logic for reliable outcomes.</p>
+                      <a href="{{ url_for('work', slug='printify') }}"
+                         class="btn btn-default">Discover</a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <a href="{{ url_for('work', slug='dynatech') }}"
+                       class="black-image-project-hover" title="Dynatech — Gamification module">
+                      <img src="{{ url_for('static', filename='assets/images/work03-hover.jpg') }}"
+                           alt="Dynatech gamification module" class="img-responsive" loading="lazy">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>003/003</h4>
+                      <h3>Dynatech — Gamification</h3>
+                      <p>Built a gamification component and improved on-site engagement.</p>
+                      <a href="{{ url_for('work', slug='dynatech') }}"
+                         class="btn btn-default">Discover</a>
+                    </div>
+                  </div>
+                </div><!-- /row -->
+              </div><!-- /item -->
+
+              <!-- Slide 3 -->
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <a href="{{ url_for('work', slug='datacom') }}"
+                       class="black-image-project-hover" title="DATACOM — Android app">
+                      <img src="{{ url_for('static', filename='assets/images/work01-hover.jpg') }}"
+                           alt="DATACOM Android app" class="img-responsive" loading="lazy">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>001/003</h4>
+                      <h3>DATACOM — Android App</h3>
+                      <p>Designed and developed the Android client for the management portal.</p>
+                      <a href="{{ url_for('work', slug='datacom') }}"
+                         class="btn btn-default">Discover</a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <a href="{{ url_for('work', slug='printify') }}"
+                       class="black-image-project-hover" title="Printify — API integrations">
+                      <img src="{{ url_for('static', filename='assets/images/work02-hover.jpg') }}"
+                           alt="Printify API integrations" class="img-responsive" loading="lazy">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>002/003</h4>
+                      <h3>Printify — API Integrations</h3>
+                      <p>Built robust REST integrations and Postman collections for QA.</p>
+                      <a href="{{ url_for('work', slug='printify') }}"
+                         class="btn btn-default">Discover</a>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <a href="{{ url_for('work', slug='dynatech') }}"
+                       class="black-image-project-hover" title="Dynatech — SEO improvements">
+                      <img src="{{ url_for('static', filename='assets/images/work03-hover.jpg') }}"
+                           alt="Dynatech SEO improvements" class="img-responsive" loading="lazy">
+                    </a>
+                    <div class="card-container card-container-lg">
+                      <h4>003/003</h4>
+                      <h3>Dynatech — SEO</h3>
+                      <p>Improved technical SEO and content structure for better visibility.</p>
+                      <a href="{{ url_for('work', slug='dynatech') }}"
+                         class="btn btn-default">Discover</a>
+                    </div>
+                  </div>
                 </div><!-- /row -->
               </div><!-- /item -->
 
@@ -148,8 +247,16 @@
   </footer>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (typeof navActivePage === "function") navActivePage();
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize Bootstrap carousel if available, loop enabled
+      var hasJQ = typeof window.jQuery === 'function';
+      if (hasJQ && typeof jQuery('#myCarousel').carousel === 'function') {
+        jQuery('#myCarousel').carousel({
+          interval: false,   // set to 5000 (ms) if you want autoplay
+          wrap: true         // loop last <-> first
+        });
+      }
+      if (typeof navActivePage === 'function') navActivePage();
     });
   </script>
   <script defer src="{{ url_for('static', filename='main.70a66962.js') }}"></script>
